@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="juxing" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/juxing" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="D:/tools/新建文件夹/CodeBlocks/MinGW/bin" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/juxing" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="D:/tools/新建文件夹/CodeBlocks/MinGW/bin" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="D:/tools/新建文件夹/CodeBlocks/MinGW/include" />
+		</Compiler>
+		<Linker>
+			<Add library="glut32" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="winmm" />
+			<Add library="gdi32" />
+			<Add directory="D:/tools/新建文件夹/CodeBlocks/MinGW/lib" />
+		</Linker>
+		<Unit filename="include/Circle.h" />
+		<Unit filename="include/Ellipse.h" />
+		<Unit filename="include/Line.h" />
+		<Unit filename="include/ShapeInfo.h" />
+		<Unit filename="include/Square.h" />
+		<Unit filename="include/Triangle.h" />
+		<Unit filename="include/operat.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Circle.cpp" />
+		<Unit filename="src/Ellipse.cpp" />
+		<Unit filename="src/Line.cpp" />
+		<Unit filename="src/ShapeInfo.cpp" />
+		<Unit filename="src/Square.cpp" />
+		<Unit filename="src/Triangle.cpp" />
+		<Unit filename="src/operat.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
