@@ -45,15 +45,17 @@
 			<Add directory="D:/tools/新建文件夹/CodeBlocks/MinGW/lib" />
 		</Linker>
 		<Unit filename="include/Circle.h" />
-		<Unit filename="include/Ellipse.h" />
+		<Unit filename="include/Ellip.h" />
 		<Unit filename="include/Line.h" />
 		<Unit filename="include/ShapeInfo.h" />
 		<Unit filename="include/Square.h" />
 		<Unit filename="include/Triangle.h" />
 		<Unit filename="include/operat.h" />
-		<Unit filename="main.cpp" />
+		<Unit filename="main.cpp">
+			<Option weight="0" />
+		</Unit>
 		<Unit filename="src/Circle.cpp" />
-		<Unit filename="src/Ellipse.cpp" />
+		<Unit filename="src/Ellip.cpp" />
 		<Unit filename="src/Line.cpp" />
 		<Unit filename="src/ShapeInfo.cpp" />
 		<Unit filename="src/Square.cpp" />
