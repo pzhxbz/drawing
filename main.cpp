@@ -10,7 +10,7 @@
 #include "Square.h"
 #include "Circle.h"
 #include "Triangle.h"
-#include "Ellipse.h"
+#include "Ellip.h"
 #define SQUARE 0
 #define CIRCLE 1
 #define TRIANGLE 2
@@ -139,9 +139,9 @@ void build()
         case TRIANGLE:
             data[num]=new Triangle();
             break;
-       // case ELLIPSE:
-        //    data[num]=new Ellipse();
-       //     break;
+        case ELLIPSE:
+            data[num]=new Ellip();
+            break;
         case LINE:
             data[num]=new Line();
             break;
@@ -160,9 +160,9 @@ void build(int i)
         case TRIANGLE:
             data[i]=new Triangle();
             break;
-        //case ELLIPSE:
-        //    data[i]=new Ellipse();
-        //    break;
+        case ELLIPSE:
+            data[i]=new Ellip();
+            break;
         case LINE:
             data[i]=new Line();
             break;
