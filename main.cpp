@@ -94,7 +94,7 @@ void open()
         int info,x11,y11,x22,y22;
         fscanf(open,"%d %d %d %d %d",&shape,&x11,&y11,&x22,&y22);
         build(i);
-        data[i]->print(info,x11,y11,x22,y22);
+        data[i]->print(shape,x11,y11,x22,y22);
         glFlush();
     }
     fclose(open);
@@ -117,11 +117,12 @@ void save()
 }
 void drawing()
 {
-    data[num]->print(shape,x0,y0,x2,y2);
     if(shape==MOVE)
     {
         drag();
     }
+    else
+        data[num]->print(shape,x0,y0,x2,y2);
     glEnd();
     glFlush();
     glPointSize(1.0);
@@ -213,7 +214,8 @@ void mouse(int button,int state, int x,int y)
             move_flag=0;
             move_save->add_change();
         }
-        num++;
+        else
+            num++;
     }
 }
 void move(int x,int y)
